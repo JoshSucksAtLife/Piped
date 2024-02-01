@@ -422,7 +422,7 @@ export default {
         this.showRecs = !this.getPreferenceBoolean("minimizeRecommendations", false);
         this.showChapters = !this.getPreferenceBoolean("minimizeChapters", false);
         if (this.video?.duration) {
-            document.title = this.video.title + " - Piped";
+            document.title = this.video.title + " - Rainbow";
             this.$refs.videoPlayer.loadVideo();
         }
         window.addEventListener("scroll", this.handleScroll);
@@ -490,7 +490,7 @@ export default {
                 })
                 .then(() => {
                     if (!this.video.error) {
-                        document.title = this.video.title + " - Piped";
+                        document.title = this.video.title + " - Rainbow";
                         this.channelId = this.video.uploaderUrl.split("/")[2];
                         if (!this.isEmbed) this.fetchSubscribedStatus();
 
