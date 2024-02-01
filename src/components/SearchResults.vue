@@ -74,7 +74,7 @@ export default {
             });
         },
         async updateResults() {
-            document.title = this.$route.query.search_query + " - Piped";
+            document.title = this.$route.query.search_query + " - Rainbow";
             this.results = this.fetchResults().then(json => {
                 this.results = json;
                 this.updateWatched(this.results.items);
