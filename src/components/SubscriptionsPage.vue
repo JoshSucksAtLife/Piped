@@ -154,7 +154,7 @@ export default {
         this.loadChannelGroups();
     },
     activated() {
-        document.title = "Subscriptions - Piped";
+        document.title = "Subscriptions - Rainbow";
     },
     methods: {
         async fetchSubscriptions() {
