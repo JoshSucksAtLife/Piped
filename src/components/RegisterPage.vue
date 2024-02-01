@@ -87,7 +87,7 @@ export default {
         }
     },
     activated() {
-        document.title = "Register - Piped";
+        document.title = "Register - Rainbow";
     },
     methods: {
         register() {
