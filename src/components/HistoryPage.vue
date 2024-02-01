@@ -90,7 +90,7 @@ export default {
         })();
     },
     activated() {
-        document.title = "Watch History - Piped";
+        document.title = "Watch History - Rainbow";
     },
     methods: {
         clearHistory() {
@@ -104,11 +104,11 @@ export default {
         exportHistory() {
             const dateStr = new Date().toISOString().split(".")[0];
             let json = {
-                format: "Piped",
+                format: "Rainbow",
                 version: 1,
                 playlists: [
                     {
-                        name: `Piped History ${dateStr}`,
+                        name: `Rainbow History ${dateStr}`,
                         type: "history",
                         visibility: "private",
                         videos: this.videos.map(video => "https://youtube.com" + video.url),
